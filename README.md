@@ -1,4 +1,4 @@
 # Correios Preços e Prazos
 ```html
-  var item
+  var item = new Pr();
 ```
