@@ -40,3 +40,39 @@ Calcula somente o preço com a data atual
       Console.WriteLine("Mensagem de erro: " + item.MsgErro);
   }
 ```
+
+## Calcular prazo
+Calcula somente o prazo com a data atual
+
+```
+  var PrecosEPrazos = Consulta.ConsultarPrazo("01310-940", "01431-010", "40010,40045,40215,40290,41106");
+  foreach (var item in PrecosEPrazos.servicos.CServico)
+  {
+      Console.WriteLine("Código: " + item.Codigo);
+      Console.WriteLine("Data máxima de entrega " + item.DataMaxEntrega);
+      Console.WriteLine("Entrega domiciliar " + item.EntregaDomicilar);
+      Console.WriteLine("Entrega sábado " + item.EntregaSabado);
+      Console.WriteLine("Prazo de entrega " + item.PrazoEntrega);
+      Console.WriteLine("Obs " + item.obsFim);
+      Console.WriteLine("Erro: " + item.Erro);
+      Console.WriteLine("Mensagem de erro: " + item.MsgErro);
+  }
+```
+
+## Calcular prazo com data
+Calcula somente o prazo com uma data especificada 
+
+```
+  var PrecosEPrazos = Consulta.ConsultarPrazoData("01310-940", "01431-010", "40010,40045,40215,40290,41106", "16/05/2019");
+  foreach (var item in PrecosEPrazos.servicos.CServico)
+  {
+      Console.WriteLine("Código: " + item.Codigo);
+      Console.WriteLine("Data máxima de entrega " + item.DataMaxEntrega);
+      Console.WriteLine("Entrega domiciliar " + item.EntregaDomicilar);
+      Console.WriteLine("Entrega sábado " + item.EntregaSabado);
+      Console.WriteLine("Prazo de entrega " + item.PrazoEntrega);
+      Console.WriteLine("Obs " + item.obsFim);
+      Console.WriteLine("Erro: " + item.Erro);
+      Console.WriteLine("Mensagem de erro: " + item.MsgErro);
+  }
+```
