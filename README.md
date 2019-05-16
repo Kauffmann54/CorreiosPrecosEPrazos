@@ -120,3 +120,7 @@ Método para mostrar se o trecho consultado utiliza modal aéreo ou terrestre
       Console.WriteLine("Obs " + item.obs);
   }
 ```
+
+## Notas
+
+Para mais informações sobre o Webservice dos Correios, acesse o site oficial com a documentação: https://correios.com.br/solucoes-empresariais/comercio-eletronico/palestras-correios-1/pdf/ManualdeImplementacaodoCalculoRemotodePrecosePrazos.pdf/at_download/file
