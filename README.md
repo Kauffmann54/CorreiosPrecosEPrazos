@@ -2,7 +2,7 @@
 
 Biblioteca para acessar o Webservice dos Correios e verificar o preço e prazo para as encomendas.
 
-## Preços e Prazos
+## Calcular Preços e Prazos
 Calcula o preço e o prazo com a data atual 
 
 Pode testar a demonstração de preços e prazos, baixando esse projeto.
