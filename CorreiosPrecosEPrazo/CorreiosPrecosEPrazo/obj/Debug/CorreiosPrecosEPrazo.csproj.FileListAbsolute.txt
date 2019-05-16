@@ -1,0 +1,10 @@
+C:\Users\Guilherme Kauffmann\source\repos\CorreiosPrecosEPrazo\CorreiosPrecosEPrazo\bin\Debug\CorreiosPrecosEPrazo.exe.config
+C:\Users\Guilherme Kauffmann\source\repos\CorreiosPrecosEPrazo\CorreiosPrecosEPrazo\bin\Debug\CorreiosPrecosEPrazo.exe
+C:\Users\Guilherme Kauffmann\source\repos\CorreiosPrecosEPrazo\CorreiosPrecosEPrazo\bin\Debug\CorreiosPrecosEPrazo.pdb
+C:\Users\Guilherme Kauffmann\source\repos\CorreiosPrecosEPrazo\CorreiosPrecosEPrazo\obj\Debug\CorreiosPrecosEPrazo.csprojAssemblyReference.cache
+C:\Users\Guilherme Kauffmann\source\repos\CorreiosPrecosEPrazo\CorreiosPrecosEPrazo\obj\Debug\CorreiosPrecosEPrazo.Properties.Resources.resources
+C:\Users\Guilherme Kauffmann\source\repos\CorreiosPrecosEPrazo\CorreiosPrecosEPrazo\obj\Debug\CorreiosPrecosEPrazo.csproj.GenerateResource.cache
+C:\Users\Guilherme Kauffmann\source\repos\CorreiosPrecosEPrazo\CorreiosPrecosEPrazo\obj\Debug\CorreiosPrecosEPrazo.csproj.CoreCompileInputs.cache
+C:\Users\Guilherme Kauffmann\source\repos\CorreiosPrecosEPrazo\CorreiosPrecosEPrazo\obj\Debug\CorreiosPrecosEPrazo.exe
+C:\Users\Guilherme Kauffmann\source\repos\CorreiosPrecosEPrazo\CorreiosPrecosEPrazo\obj\Debug\CorreiosPrecosEPrazo.pdb
+C:\Users\Guilherme Kauffmann\source\repos\CorreiosPrecosEPrazo\CorreiosPrecosEPrazo\obj\Debug\CorreiosPrecosEPrazo.PrecosEPrazo.resources
