@@ -1,6 +1,10 @@
 # Correios Preços e Prazos
 
+![](https://firebasestorage.googleapis.com/v0/b/whatsapp-541a0.appspot.com/o/Correios_logo.png?alt=media&token=95617299-d20f-4c8f-9d24-6263114644d4) 
+
 Biblioteca para acessar o Webservice dos Correios e verificar o preço e prazo para as encomendas.
+
+* Consulta via Webservice: A interface do WebService pode ser consultada em: http://ws.correios.com.br/calculador/CalcPrecoPrazo.asmx 
 
 ## Instalação
 
@@ -20,6 +24,8 @@ Calcula o preço e o prazo com a data atual
 
 Pode testar a demonstração de preços e prazos, baixando esse projeto.
 ```c#
+  using CorreiosPrecosEPrazo.Correios;
+  ...
   var PrecosEPrazos = Consulta.ConsultarPrecosEPrazos("", "", "40010,40045,40215,40290,41106", "01310-940", "01431-010", "0.5", 1, 16, 11, 12, 0, "N", 150, "N");
   foreach(var item in PrecosEPrazos.servicos.CServico)
   {
@@ -41,6 +47,8 @@ Pode testar a demonstração de preços e prazos, baixando esse projeto.
 Calcula somente o preço com a data atual 
 
 ```c#
+  using CorreiosPrecosEPrazo.Correios;
+  ...
   var precos = Consulta.ConsultarPrecos("", "", "40010,40045,40215,40290,41106", "01310-940", "01431-010", "0.5", 1, 16, 11, 12, 0, "N", 150, "N");
   foreach (var item in precos.servicos.CServico)
   {
@@ -58,6 +66,8 @@ Calcula somente o preço com a data atual
 Calcula somente o prazo com a data atual
 
 ```c#
+  using CorreiosPrecosEPrazo.Correios;
+  ...
   var prazos = Consulta.ConsultarPrazo("01310-940", "01431-010", "40010,40045,40215,40290,41106");
   foreach (var item in prazos.servicos.CServico)
   {
@@ -76,6 +86,8 @@ Calcula somente o prazo com a data atual
 Calcula somente o prazo com uma data especificada 
 
 ```c#
+  using CorreiosPrecosEPrazo.Correios;
+  ...
   var prazosComData = Consulta.ConsultarPrazoData("01310-940", "01431-010", "40010,40045,40215,40290,41106", "16/05/2019");
   foreach (var item in prazosComData.servicos.CServico)
   {
@@ -94,6 +106,8 @@ Calcula somente o prazo com uma data especificada
 Lista os serviços que estão disponíveis para cálculo de preço e/ou prazo 
 
 ```c#
+  using CorreiosPrecosEPrazo.Correios;
+  ...
   var listaServicos = Consulta.ConsultarListaServicos();
   foreach (var item in listaServicos.servicosCalculo.CServicosCalculo)
   {
@@ -110,6 +124,8 @@ Lista os serviços que estão disponíveis para cálculo de preço e/ou prazo
 Lista os serviços que são calculados pelo STAR 
 
 ```c#
+  using CorreiosPrecosEPrazo.Correios;
+  ...
   var listaServicosSTAR = Consulta.ConsultarListaServicosSTAR();
   foreach (var item in listaServicosSTAR.servicosCalculo.CServicosCalculo)
   {
@@ -125,6 +141,8 @@ Lista os serviços que são calculados pelo STAR
 Método para mostrar se o trecho consultado utiliza modal aéreo ou terrestre 
 
 ```c#
+  using CorreiosPrecosEPrazo.Correios;
+  ...
   var modal = Consulta.ConsultarModal("40010,40045,40215,40290,41106", "01310-940", "01431-010");
   foreach (var item in modal.servicosCalculo.CModal)
   {
@@ -135,9 +153,9 @@ Método para mostrar se o trecho consultado utiliza modal aéreo ou terrestre
 ```
 
 ## Licença
-  O calculador de preços e prazos de encomendas dos Correios é destinado aos clientes que possuem *contrato* de SEDEX, e-SEDEX e PAC, que necessitam calcular, no seu ambiente e de forma *personalizada*, o preço e o prazo de entrega de uma encomenda.
+  O calculador de preços e prazos de encomendas dos Correios é destinado aos clientes que possuem **contrato** de SEDEX, e-SEDEX e PAC, que necessitam calcular, no seu ambiente e de forma **personalizada**, o preço e o prazo de entrega de uma encomenda.
   
-  É possível também a um cliente que *não possui contrato* de encomenda com os Correios realizar o cálculo, porém neste caso os preços apresentados serão aqueles praticados no *balcão da agência*. 
+  É possível também a um cliente que **não possui contrato** de encomenda com os Correios realizar o cálculo, porém neste caso os preços apresentados serão aqueles praticados no **balcão da agência**. 
 
 ## Notas
 
