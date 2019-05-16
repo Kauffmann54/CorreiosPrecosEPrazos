@@ -7,7 +7,7 @@ Calcula o preço e o prazo com a data atual
 
 Pode testar a demonstração de preços e prazos, baixando esse projeto.
 ```c#
-  var PrecosEPrazos = Consulta.ConsultarPrecosEPrazos("", "", "40010,40045,40215,40290,41106", "01310-940", "01431-010", "0.5", 1, 16, 11, 12, 0, "N", 150, "N");
+  var PrecosEPrazos = Consulta.ConsultarPrecosEPrazos("", "", "40010,40045,40215,40290,41106", "01310940", "01431010", "0.5", 1, 16, 11, 12, 0, "N", 150, "N");
   foreach(var item in PrecosEPrazos.servicos.CServico)
   {
       Console.WriteLine("Código: " + item.Codigo);
@@ -28,7 +28,7 @@ Pode testar a demonstração de preços e prazos, baixando esse projeto.
 Calcula somente o preço com a data atual 
 
 ```c#
-  var PrecosEPrazos = Consulta.ConsultarPrecos("", "", "40010,40045,40215,40290,41106", "01310-940", "01431-010", "0.5", 1, 16, 11, 12, 0, "N", 150, "N");
+  var PrecosEPrazos = Consulta.ConsultarPrecos("", "", "40010,40045,40215,40290,41106", "01310940", "01431010", "0.5", 1, 16, 11, 12, 0, "N", 150, "N");
   foreach (var item in PrecosEPrazos.servicos.CServico)
   {
       Console.WriteLine("Código: " + item.Codigo);
@@ -45,7 +45,7 @@ Calcula somente o preço com a data atual
 Calcula somente o prazo com a data atual
 
 ```c#
-  var PrecosEPrazos = Consulta.ConsultarPrazo("01310-940", "01431-010", "40010,40045,40215,40290,41106");
+  var PrecosEPrazos = Consulta.ConsultarPrazo("01310940", "01431010", "40010,40045,40215,40290,41106");
   foreach (var item in PrecosEPrazos.servicos.CServico)
   {
       Console.WriteLine("Código: " + item.Codigo);
@@ -63,7 +63,7 @@ Calcula somente o prazo com a data atual
 Calcula somente o prazo com uma data especificada 
 
 ```c#
-  var PrecosEPrazos = Consulta.ConsultarPrazoData("01310-940", "01431-010", "40010,40045,40215,40290,41106", "16/05/2019");
+  var PrecosEPrazos = Consulta.ConsultarPrazoData("01310940", "01431010", "40010,40045,40215,40290,41106", "16/05/2019");
   foreach (var item in PrecosEPrazos.servicos.CServico)
   {
       Console.WriteLine("Código: " + item.Codigo);
@@ -112,7 +112,7 @@ Lista os serviços que são calculados pelo STAR
 Método para mostrar se o trecho consultado utiliza modal aéreo ou terrestre 
 
 ```c#
-  var PrecosEPrazos = Consulta.ConsultarModal("40010,40045,40215,40290,41106", "01310-940", "01431-010");
+  var PrecosEPrazos = Consulta.ConsultarModal("40010,40045,40215,40290,41106", "01310940", "01431010");
   foreach (var item in PrecosEPrazos.servicosCalculo.CModal)
   {
       Console.WriteLine("Código: " + item.codigo);
