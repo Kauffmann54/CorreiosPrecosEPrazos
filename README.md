@@ -27,7 +27,7 @@ Pode testar a demonstração de preços e prazos, baixando esse projeto.
 ## Calcular preços
 Calcula somente o preço com a data atual 
 
-```
+```c#
   var PrecosEPrazos = Consulta.ConsultarPrecos("", "", "40010,40045,40215,40290,41106", "01310-940", "01431-010", "0.5", 1, 16, 11, 12, 0, "N", 150, "N");
   foreach (var item in PrecosEPrazos.servicos.CServico)
   {
@@ -44,7 +44,7 @@ Calcula somente o preço com a data atual
 ## Calcular prazo
 Calcula somente o prazo com a data atual
 
-```
+```c#
   var PrecosEPrazos = Consulta.ConsultarPrazo("01310-940", "01431-010", "40010,40045,40215,40290,41106");
   foreach (var item in PrecosEPrazos.servicos.CServico)
   {
@@ -62,7 +62,7 @@ Calcula somente o prazo com a data atual
 ## Calcular prazo com data
 Calcula somente o prazo com uma data especificada 
 
-```
+```c#
   var PrecosEPrazos = Consulta.ConsultarPrazoData("01310-940", "01431-010", "40010,40045,40215,40290,41106", "16/05/2019");
   foreach (var item in PrecosEPrazos.servicos.CServico)
   {
@@ -80,7 +80,7 @@ Calcula somente o prazo com uma data especificada
 ## Consultar Lista de Serviços
 Lista os serviços que estão disponíveis para cálculo de preço e/ou prazo 
 
-```
+```c#
   var PrecosEPrazos = Consulta.ConsultarListaServicos();
   foreach (var item in PrecosEPrazos.servicosCalculo.CServicosCalculo)
   {
@@ -96,7 +96,7 @@ Lista os serviços que estão disponíveis para cálculo de preço e/ou prazo
 ## Consultar Lista de Serviços STAR
 Lista os serviços que são calculados pelo STAR 
 
-```
+```c#
   var PrecosEPrazos = Consulta.ConsultarListaServicosSTAR();
   foreach (var item in PrecosEPrazos.servicosCalculo.CServicosCalculo)
   {
@@ -111,7 +111,7 @@ Lista os serviços que são calculados pelo STAR
 ## Consultar Modal
 Método para mostrar se o trecho consultado utiliza modal aéreo ou terrestre 
 
-```
+```c#
   var PrecosEPrazos = Consulta.ConsultarModal("40010,40045,40215,40290,41106", "01310-940", "01431-010");
   foreach (var item in PrecosEPrazos.servicosCalculo.CModal)
   {
