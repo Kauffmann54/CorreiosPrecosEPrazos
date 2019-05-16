@@ -2,6 +2,19 @@
 
 Biblioteca para acessar o Webservice dos Correios e verificar o preço e prazo para as encomendas.
 
+## Instalação
+
+```
+  // Package Manager
+  Install-Package CorreiosPrecosEPrazoNuget -Version 1.0.1
+  
+  // .NET CLI
+  > dotnet add package CorreiosPrecosEPrazoNuget --version 1.0.1
+  
+  // Packet CLI
+  paket add CorreiosPrecosEPrazoNuget --version 1.0.1 
+```
+
 ## Calcular Preços e Prazos
 Calcula o preço e o prazo com a data atual 
 
