@@ -107,3 +107,16 @@ Lista os serviços que são calculados pelo STAR
       Console.WriteLine("Mensagem de erro: " + item.msgErro);
   }
 ```
+
+## Consultar Modal
+Método para mostrar se o trecho consultado utiliza modal aéreo ou terrestre 
+
+```
+  var PrecosEPrazos = Consulta.ConsultarModal("40010,40045,40215,40290,41106", "01310-940", "01431-010");
+  foreach (var item in PrecosEPrazos.servicosCalculo.CModal)
+  {
+      Console.WriteLine("Código: " + item.codigo);
+      Console.WriteLine("Modal " + item.modal);
+      Console.WriteLine("Obs " + item.obs);
+  }
+```
