@@ -76,3 +76,19 @@ Calcula somente o prazo com uma data especificada
       Console.WriteLine("Mensagem de erro: " + item.MsgErro);
   }
 ```
+
+## Consultar Lista de Serviços
+Lista os serviços que estão disponíveis para cálculo de preço e/ou prazo 
+
+```
+  var PrecosEPrazos = Consulta.ConsultarListaServicos();
+  foreach (var item in PrecosEPrazos.servicosCalculo.CServicosCalculo)
+  {
+      Console.WriteLine("Código: " + item.Codigo);
+      Console.WriteLine("Prazo " + item.calcula_prazo);
+      Console.WriteLine("Preço " + item.calcula_preco);
+      Console.WriteLine("Descrição " + item.descricao);
+      Console.WriteLine("Erro: " + item.erro);
+      Console.WriteLine("Mensagem de erro: " + item.msgErro);
+  }
+```
