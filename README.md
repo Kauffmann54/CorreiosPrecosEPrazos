@@ -92,3 +92,18 @@ Lista os serviços que estão disponíveis para cálculo de preço e/ou prazo
       Console.WriteLine("Mensagem de erro: " + item.msgErro);
   }
 ```
+
+## Consultar Lista de Serviços STAR
+Lista os serviços que são calculados pelo STAR 
+
+```
+  var PrecosEPrazos = Consulta.ConsultarListaServicosSTAR();
+  foreach (var item in PrecosEPrazos.servicosCalculo.CServicosCalculo)
+  {
+      Console.WriteLine("Código: " + item.Codigo);
+      Console.WriteLine("Preço " + item.calcula_preco);
+      Console.WriteLine("Descrição " + item.descricao);
+      Console.WriteLine("Erro: " + item.erro);
+      Console.WriteLine("Mensagem de erro: " + item.msgErro);
+  }
+```
