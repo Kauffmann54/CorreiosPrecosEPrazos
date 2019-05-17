@@ -1,6 +1,4 @@
-﻿using System.IO;
 using System.Windows.Forms;
-using System.Xml;
 
 namespace CorreiosPrecosEPrazo.Correios
 {
@@ -33,7 +31,7 @@ namespace CorreiosPrecosEPrazo.Correios
             string valorLargura = "0";
             string valorComprimento = "0";
             string valorDiametro = "0";
-
+            
             if (sCepOrigem.Length != 8)
             {
                 MessageBox.Show("O CEP de origem é inválido");
@@ -106,7 +104,7 @@ namespace CorreiosPrecosEPrazo.Correios
                     return null;
                 }
             }
-
+            
             valorDeclarado = Helpers.retornarDecimalString(nVlValorDeclarado);
             valorAltura = Helpers.retornarDecimalString(nVlAltura);
             valorLargura = Helpers.retornarDecimalString(nVlLargura);
