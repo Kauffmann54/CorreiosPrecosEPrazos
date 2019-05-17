@@ -153,7 +153,7 @@ foreach (var item in modal.servicosCalculo.CModal)
 ```
 
 ## Licença
-  <p>O calculador de preços e prazos de encomendas dos Correios é destinado aos clientes que possuem **contrato** de SEDEX, e-SEDEX e PAC, que necessitam calcular, no seu ambiente e de forma **personalizada**, o preço e o prazo de entrega de uma encomenda.</p>
+  O calculador de preços e prazos de encomendas dos Correios é destinado aos clientes que possuem **contrato** de SEDEX, e-SEDEX e PAC, que necessitam calcular, no seu ambiente e de forma **personalizada**, o preço e o prazo de entrega de uma encomenda.
   
   É possível também a um cliente que **não possui contrato** de encomenda com os Correios realizar o cálculo, porém neste caso os preços apresentados serão aqueles praticados no **balcão da agência**. 
 
