@@ -1,6 +1,6 @@
 # Correios Preços e Prazos
 
-![](https://firebasestorage.googleapis.com/v0/b/whatsapp-541a0.appspot.com/o/Correios_logo.png?alt=media&token=95617299-d20f-4c8f-9d24-6263114644d4) 
+![](https://firebasestorage.googleapis.com/v0/b/whatsapp-541a0.appspot.com/o/Correios_logo.png?alt=media&token=dfc39073-8ffc-4b51-89b1-3d49d207af58) 
 
 Biblioteca para acessar o Webservice dos Correios e verificar o preço e prazo para as encomendas.
 
